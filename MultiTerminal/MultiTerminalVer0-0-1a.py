@@ -29,6 +29,8 @@ if message in helplist:
     print("MultiTerminal: Version - Donner la version du MultiTerminal")
     print('MultiTerminal: Et plus à venir...')
     print("MultiTerminal: La programme va redémmarer pour continuer.")
+    input("MultiTerminal: Tapper le boutton d'entrée pour continuer...")
+    os.system("sudo python3 MultiTerminalVer0-0-1a.py")
 else:
     if message in verify:
         command = input("MultiTerminal: C'est quoi ton commande? > ")
@@ -39,7 +41,7 @@ else:
             if continue1 in continue_y:
                 print("MultiTerminal: OK, la programme va redémmarer maintenant!")
                 time.sleep(3)
-                os.system("sudo python3 MultiTerminalVer1.py")
+                os.system("sudo python3 MultiTerminalVer0-0-1a.py")
             else:
                 print("MultiTerminal: OK, bonne journée!")
         else:
@@ -53,7 +55,7 @@ else:
                 if continue3 in continue_y:
                     print("MultiTerminal: OK, la programme va redémmarer maintenant!")
                     time.sleep(3)
-                    os.system("sudo python3 MultiTerminalVer1.py")
+                    os.system("sudo python3 MultiTerminalVer0-0-1a.py")
                 else:
                     print("MultiTerminal: OK, bonne journée!")
             else:
@@ -62,7 +64,7 @@ else:
                 if continue2 in continue_y:
                     print("MultiTerminal: OK, la programme va redémmarer maintenant!")
                     time.sleep(3)
-                    os.system("sudo python3 MultiTerminalVer1.py")
+                    os.system("sudo python3 MultiTerminalVer0-0-1a.py")
                 else:
                     print("MultiTerminal: OK, bonne journée!")
     else:
@@ -74,8 +76,8 @@ else:
                 time.sleep(3)
                 print("MultiTerminal: La programme va redémmarer maintenant pour continuer.")
                 time.sleep(3)
-                os.system("sudo python3 MultiTerminalVer1.py")
+                os.system("sudo python3 MultiTerminalVer0-0-1a.py")
             else:
                 print("MultiTerminal: Je m'excuse, je n'ai pas compris ça. La programme va maintenant redémmarer pour continuer.")
-                os.system("sudo python3 MultiTerminalVer1.py")
+                os.system("sudo python3 MultiTerminalVer0-0-1a.py")
             
