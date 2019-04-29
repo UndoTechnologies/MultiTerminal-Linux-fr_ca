@@ -7,8 +7,9 @@ import os
 import time
 import getpass
 
+os.system("clear")
 print("MultiTerminal - Crée par Undo Technologies")
-time.sleep(1)
+time.sleep(2)
 print('MultiTerminal: Bienvenue à MultiTerminal! Faire sur que cette programme est ouvert avec les permission de "SuperUser (su)" ou de "sudo".')
 time.sleep(3)
 
@@ -22,6 +23,7 @@ version = "Version", "version", "VERSION", "ver", "Ver", "VER"
 message = input("MultiTerminal: Qu'est-ce que tu veux faire aujourd'hui? > ")
 
 if message in helplist:
+    os.system("clear")
     print('MultiTerminal: Vos options sont:')
     print('MultiTerminal: Vérifier - Faire sur que ton programme est sauf pour ton ordinateur')
     print('MultiTerminal: Analyser - Analyser des fichiers *Pas fonctionelle encore*')
@@ -33,6 +35,7 @@ if message in helplist:
     os.system("sudo python3 MultiTerminalVer0-0-1a.py")
 else:
     if message in verify:
+        os.system("clear")
         command = input("MultiTerminal: C'est quoi ton commande? > ")
         if command in danger_list:
             print("MultiTerminal: Cette commande est malveillent et peut causer des problèmes dessus ton ordinateur. Nous vous conseillons de ne pas utiliser cette commande pour la sécurité de ton ordinateur!")
@@ -44,6 +47,7 @@ else:
                 os.system("sudo python3 MultiTerminalVer0-0-1a.py")
             else:
                 print("MultiTerminal: OK, bonne journée!")
+                os.system("clear")
         else:
             print("MultiTerminal: Cette programme est saufe pour ton ordinateur! Si vous encore n'êtes pas sûr si cette commande est 100% sauf, tu n'as pas besoin d'exécuter.")
             run = input("MultiTerminal: Veux-tu qu'on exécute cette commande? > ")
@@ -58,6 +62,7 @@ else:
                     os.system("sudo python3 MultiTerminalVer0-0-1a.py")
                 else:
                     print("MultiTerminal: OK, bonne journée!")
+                    os.system("clear")
             else:
                 print("MultiTerminal: OK, on ne va pas exécuter cette commande.")
                 continue2 = input("MultiTerminal: Veux-tu faire d'autre choses aujours'hui? > ")
@@ -67,6 +72,7 @@ else:
                     os.system("sudo python3 MultiTerminalVer0-0-1a.py")
                 else:
                     print("MultiTerminal: OK, bonne journée!")
+                    os.system("clear")
     else:
         if message in end:
             print("MultiTerminal: OK, bonne journée!")
