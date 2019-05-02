@@ -1,6 +1,5 @@
 #MultiTerminal par UndoTechnologies/Brennan LeBlanc
 #Copyright 2019 par Brennan LeBlanc et Undo Technologies
-#Sur license de GNU General Public License 3.0
 
 import sys
 import os
